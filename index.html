@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집반찬연구소 :: 프리미엄 반찬, 집반찬연구소</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/kidsmenu.js"></script>
+    <script src="js/deliverary.js"></script>
+    <script src="js/story.js"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <fieldset>
+                <input type="text">
+                <img src="img/55.jpg" alt="search_tool">
+            </fieldset>
+
+            <div id="logo"> <a href="#"> <img src="img/2.jpg" alt="로고"></a>
+            </div>
+
+            <div id="login">
+
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">내정보 </a></li>
+                </ul>
+
+
+            </div>
+
+            <div id="iconbox1">
+                <div class="nav-menu">
+                    <a href="#"><img src="img/35.jpg" alt="이야기"></a> <span><a href="#">이야기</a></span>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#"><img src="img/34.jpg" alt="반찬보기"></a> <span><a href="#">반찬보기</a></span>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#"><img src="img/27.jpg" alt="장바구니"></a> <span><a href="#">장바구니</a></span>
+                </div>
+
+
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="sub.html" target="_self">모든반찬</a>
+                        <ul class="sub">
+                            <li><a href="#">정기배송</a></li>
+                            <li><a href="#">볶음</a></li>
+                            <li><a href="#">어린이 반찬</a></li>
+                            <li><a href="#">국/찌개/탕</a></li>
+                            <li><a href="#">메인요리</a></li>
+                            <li><a href="#">협업상품</a></li>
+                            <li><a href="#">전/생선</a></li>
+                            <li><a href="#">대용량</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">할인특가</a>
+                        <ul class="sub">
+                            <li><a href="#">소분야채</a></li>
+                            <li><a href="#">묶음반찬</a></li>
+                            <li><a href="#">협업상품</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">신상품</a>
+                        <ul class="sub">
+                            <li><a href="#">무침</a></li>
+                            <li><a href="#">어린이반찬</a></li>
+                            <li><a href="#">메인요리</a></li>
+                            <li><a href="#">묶음반찬</a></li>
+                            <li><a href="#">김치/절임/젓갈</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">간편검색</a>
+                        <ul class="sub">
+                            <li><a href="#">#신제품</a></li>
+                            <li><a href="#">#인기</a></li>
+                            <li><a href="#">#냉동</a></li>
+                            <li><a href="#">#맵지않음</a></li>
+                            <li><a href="#">#따뜻하게먹는반찬</a></li>
+                            <li><a href="#">#조리필요</a></li>
+                            <li><a href="#">#제철반찬</a></li>
+                            <li><a href="#">#차갑게먹는반찬</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">인기검색</a>
+                        <ul class="sub">
+                            <li><a href="#">#할인반찬</a></li>
+                            <li><a href="#">#부모님반찬</a></li>
+                            <li><a href="#">#제철반찬</a></li>
+                            <li><a href="#">#쿠킹박스</a></li>
+                            <li><a href="#">#어린이반찬</a></li>
+                            <li><a href="#">#소분야채</a></li>
+                            <li><a href="#">#반조리</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">이달의 맛집</a>
+                        <ul class="sub">
+                            <li><a href="#">클린라벨</a></li>
+                            <li><a href="#">조정숙음식명인</a></li>
+                            <li><a href="#">조희숙세프</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">이벤트/혜택</a>
+                        <ul class="sub">
+                            <li><a href="#">5월신규회원혜택</a></li>
+                            <li><a href="#">어버이날한상차림</a></li>
+                            <li><a href="#">4월브랜드위크</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub.html">COMMUNIT</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <script>
+
+                $(function () {
+
+                    $('.menu > li').mouseover(function () {
+
+                        $(this).find('.sub').stop().slideDown();
+                    }).mouseout(function () {
+                        $('.sub').stop().slideUp();
+                    });
+
+                });
+
+            </script>
+
+        </div>
+    </header>
+
+    <div id="slider">
+        <ul class="slide">
+            <li><img src="img/banner1.jpg" alt=""></li>
+            <li><img src="img/banner2.jpg" alt=""></li>
+            <li><img src="img/banner3.jpg" alt=""></li>
+            <li><img src="img/banner4.jpg" alt=""></li>
+            <li><img src="img/banner5.jpg" alt=""></li>
+            <li><img src="img/banner6.jpg" alt=""></li>
+            <li><img src="img/banner7.jpg" alt=""></li>
+            <li><img src="img/banner8.jpg" alt=""></li>
+            <li><img src="img/banner9.jpg" alt=""></li>
+            <li><img src="img/banner10.jpg" alt=""></li>
+            <li><img src="img/banner11.jpg" alt=""></li>
+        </ul>
+
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+
+    </div>
+
+    <script>
+        function prev() {
+
+            $('.slide li:last').prependTo('.slide');
+
+            $('.slide').css('margin-left', -1700);    // $('.slide').css({marginLeft:-1000}); 
+
+            $('.slide').stop().animate({ marginLeft: 0 }, 800);
+
+        }
+
+
+
+        function next() {
+
+            $('.slide').stop().animate({ marginLeft: -1700 }, function () {
+
+                $('.slide li:first').appendTo('.slide');
+
+                $('.slide').css({ marginLeft: 0 });
+
+            });
+
+        }
+
+
+
+        function slide() {
+
+            $('.slide').stop().animate({ marginLeft: -1700 }, function () {
+
+                $('.slide li:first').appendTo('.slide');
+
+                $('.slide').css({ marginLeft: 0 });
+
+            });
+
+        }
+
+
+
+        setInterval(slide, 3000);
+
+
+
+        $('.prev').click(function () {
+
+            prev();
+
+        });
+
+
+
+        $('.next').click(function () {
+
+            next();
+
+        });
+
+    </script>
+
+
+    <section>
+        <form>
+            <div id="news1">
+                <a href="#"><img src="img/icon1.jpg" alt=""></a>
+
+                <div class="news1-txt">
+                    <h4>전체상품</h4>
+                    <P>전체상품보기</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon2.jpg" alt=""></a>
+
+
+                <div class="news1-txt">
+                    <h4>집밥세트</h4>
+                    <P>반찬세트 골라담기</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon3.jpg" alt=""></a>
+
+                <div class="news1-txt">
+                    <h4>조림류</h4>
+                    <P>연근,우엉,메추리,단호박 등</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon4.jpg" alt=""></a>
+                <div class="news1-txt">
+                    <h4>볶음류</h4>
+                    <P>제육,불고기,오징어,소세지 등</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon5.jpg" alt=""></a>
+                <div class="news1-txt">
+                    <h4>무침류</h4>
+                    <P>오이지,도라지,무,시래기 등</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon6.jpg" alt=""></a>
+                <div class="news1-txt">
+                    <h4>절임류</h4>
+                    <P>무말랭이,깻잎,고추,양파 등</P>
+                </div>
+
+            </div>
+        </form>
+
+
+        </div>
+
+        </div>
+
+        <div id="brand">
+            <h2>어린이반찬</h2> <br>
+            <div class="brandbox">
+                <img src="" alt="">
+                <span class="tag-not-spicy">#맵지않음</span> <br>
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+            </div>
+
+
+            <div class="brandbox">
+                <img src="" alt="">
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+
+            </div>
+
+            <div class="brandbox">
+                <img src="" alt="">
+                <span class="tag-not-spicy">#맵지않음</span> <br>
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+            </div>
+
+            <div class="brandbox">
+
+                <img src="" alt="">
+                <span class="tag-not-spicy">#맵지않음</span> <br>
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div id="box1">
+            <img src="img/24.png" alt="">
+
+        </div>
+
+        <div id="box2">
+            <img src="img/25.png" alt="">
+
+        </div>
+
+        <div id="box3">
+            <img src="img/26.png" alt="">
+
+        </div>
+
+        <div id="brand">
+            <h2>주간추천반찬</h2><br>
+            <div class="brandbox">
+                <img src="" alt="">
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+            </div>
+
+            <div class="brandbox">
+                <img src="" alt="">
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+            </div>
+
+            <div class="brandbox">
+                <img src="" alt="">
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+            </div>
+
+            <div class="brandbox">
+                <img src="" alt="">
+                <strong></strong>
+                <P></P>
+                <strong class="price-decount">
+                </strong>
+            </div>
+
+            <div id="news2"> <img src="img/39.jpg" alt="">
+            </div>
+
+
+            <div id="brand1">
+                <h2>새로운 반찬</h2><br>
+                <div class="brandbox">
+                    <img src="" alt="">
+                    <span class="tag-not-spicy">#신제품</span> <br>
+                    <strong></strong>
+                    <P></P>
+                    <strong class="price-decount">
+                    </strong>
+                </div>
+
+                <div class="brandbox">
+                    <img src="" alt="">
+                    <span class="tag-not-spicy">#신제품</span> <br>
+                    <strong></strong>
+                    <P></P>
+                    <strong class="price-decount">
+                    </strong>
+                </div>
+
+                <div class="brandbox">
+                    <img src="" alt="">
+                    <span class="tag-not-spicy">#맵지않음</span> <br>
+                    <strong></strong>
+                    <P></P>
+                    <strong class="price-decount">
+                    </strong>
+
+                </div>
+
+                <div class="brandbox">
+                    <img src="" alt="">
+                    <strong></strong>
+                    <P></P>
+                    <strong class="price-decount">
+                    </strong>
+                </div>
+
+                <div id="news3">
+                    <img src="img/29.jpg" alt="">
+
+                </div>
+
+
+                <div id="brand2">
+                    <h2>정기배송</h2>
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <span class="tag-not-spicy">#신제품</span> <br>
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                        <h3></h3>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                    </div>
+
+
+
+                    <div class="brandbox2">
+                        <img src="" alt="">
+                        <strong></strong>
+
+                        <P></P>
+                        <strong class="price-decount"></strong>
+                    </div>
+
+                    <div id="brand2">
+                        <h2>집반찬연구소 이야기</h2>
+                        <div class="story-section">
+                            <a href="#"><img src="" alt=""></a>
+                            <h5><a href="#"></a></h5>
+                            <p><a href="#"></a></p>
+                        </div>
+
+                        <div class="story-section">
+                            <a href="#"><img src="" alt=""></a>
+                            <h5><a href="#"></a></h5>
+                            <p><a href="#"></a></p>
+                        </div>
+
+                        <div class="story-section">
+                            <a href="#"><img src="" alt=""></a>
+                            <h5><a href="#"></a></h5>
+                            <p><a href="#"></a></p>
+                        </div>
+
+
+
+                        <div class="story-section">
+                            <a href="#"><img src="" alt=""></a>
+                            <h5><a href="#"></a></h5>
+                            <p><a href="#"></a></p>
+                        </div>
+
+
+
+                        <div class="story-section">
+                            <a href="#"><img src="" alt=""></a>
+                            <h5><a href="#"></a></h5>
+                            <p><a href="#"></a></p>
+                        </div>
+
+
+                        <div class="story-section">
+                            <a href="#"><img src="" alt=""></a>
+                            <h5><a href="#"></a></h5>
+                            <p><a href="#"></a></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <hr>
+        <div id="box">
+            <ul>
+                <li>집반찬연구소 소개</li>
+                <li>|</li>
+                <li>이용약관</li>
+                <li>|</li>
+                <li>개인정보처리방침</li>
+            </ul>
+            <p>집반찬연구소 자세히 보기<br>
+                대표 : 박종철 / 주소 : 인천광역시 미추홀구 방축로206번길 36 집반찬연구소<br>
+                사업자번호 : 121-86-17743 / 통신판매업신고 : 제 2016-인천남구-0674 호 / 개인정보 정책 및 담당 : 정문채<br>
+                대표번호 : 1588-3754 / 팩스번호 : 032-424-3088 / 이메일 : zipbanchan@sannamchon.co.kr<br>
+                ⓒ SANNAMCHON CORP. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

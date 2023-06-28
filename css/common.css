@@ -1,0 +1,48 @@
+@charset "UTF-8"; 
+/*헤더*/
+        header {width: 100%; height: 190px;}
+        header > div {width:1260px; height:170px; margin:0 auto;}
+
+        fieldset {float: left; background-color:rgba(63, 141, 77, 0.514) ; width: 200px; height: 20px; border-radius: 15px; border: none; opacity: 0.6; margin: 80px 10px 0 10px; }
+        fieldset > input { background-color:rgba(242, 246, 243, 0) ; border: none;  height: 17px; width: 170px; }
+        fieldset > img {width: 20px; height: 20px;}
+        img { overflow: clip;}
+
+        #logo {width:200px; height:90px; float:left; margin:20px 0 0 300px;}
+        #logo > a > img {width:100%; height:100%;}
+        #login {width:300px; height:25px; float:right; margin:20px 10px 0 0px; }
+
+        #login ul {font-size:12px; color:#666; padding: 8px; margin: 0 0 0 55px;}
+        #login li {float:left; margin:0 10px;}
+        #login li a {text-decoration:none; color:#666;}
+
+
+        #iconbox1 {width:300px; height:30px; float:right; margin:10px 10px 0 0px;}    #iconbox1 > .nav-menu { margin:0px 5px 5px 5px; color:#000; float: left;}
+        #iconbox1 > .nav-menu > a >img {width:25px; height:25px;margin: 10px 0 0 0px;}
+        #iconbox1 > .nav-menu > span > a {font-size:14px; color: #000; text-decoration:none; }
+
+        ul,li,ol{list-style: none; margin: 0; padding: 0;}
+        a {text-decoration: none; color:#333;}
+        nav {width:100%; height:30px; margin: 30px 0 0 0; float: left; position: relative;}
+        nav > .menu { margin:auto; float: left; width: 100%; height: 40px; color: #666; font-weight: bold; }
+        nav > .menu > li {float:left; width:12%;  text-align: center; transition:all 0.5s ease; line-height: 30px; background: #fff; position: relative; }
+        nav > .menu > li > a {color: #666; font-weight: bold; font-size: 16px;}
+        nav > .menu > li:hover > a {color:#ccc;}
+        .sub { display: none;  line-height: 30px; z-index: 3; font-size: 13px; margin: auto; position: absolute; top: 30px ; left: 15px;}
+        .sub > li {width: 120px; height: 30px; background-color: #ecdbbf; opacity: 0.9; transition: all 0.5s ease; }
+        .sub > li > a:hover {display: block; background-color: #e4cda6; }
+
+
+
+/*하단*/
+
+
+        footer  {width:100%; height:160px;  margin:50px 0 0 0px;}
+        footer > #box {width: 1260px; height: 190px; margin:5px auto; }
+
+        footer > #box > ul {width:750px; height:50px; float:left; margin:20px 0 0 30px; color:#000;}
+        footer > #box > ul > li {float:left; font-size: 12px; margin:5px 5px; font-weight: bold;}
+        footer > #box > ul > li > a {text-decoration: none; color:#666;}
+        footer > #box > p { float:right; width:500px; height:50px; margin:0px 685px 0 1px; font-size:12px; color: #666; line-height: 150%;}
+
+

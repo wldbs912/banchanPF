@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집반찬연구소 :: 프리미엄 반찬, 집반찬연구소</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/kidsmenu.js"></script>
+    <script src="js/deliverary.js"></script>
+    <script src="js/story.js"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <fieldset>
+                <input type="text">
+                <img src="img/55.jpg" alt="search_tool">
+            </fieldset>
+
+            <div id="logo"> <a href="#"> <img src="img/2.jpg" alt="로고"></a>
+            </div>
+
+            <div id="login">
+
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">내정보 </a></li>
+                </ul>
+
+
+            </div>
+
+            <div id="iconbox1">
+                <div class="nav-menu">
+                    <a href="#"><img src="img/35.jpg" alt="이야기"></a> <span><a href="#">이야기</a></span>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#"><img src="img/34.jpg" alt="반찬보기"></a> <span><a href="#">반찬보기</a></span>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#"><img src="img/27.jpg" alt="장바구니"></a> <span><a href="#">장바구니</a></span>
+                </div>
+
+
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="sub.html" target="_self">모든반찬</a>
+                        <ul class="sub">
+                            <li><a href="#">정기배송</a></li>
+                            <li><a href="#">볶음</a></li>
+                            <li><a href="#">어린이 반찬</a></li>
+                            <li><a href="#">국/찌개/탕</a></li>
+                            <li><a href="#">메인요리</a></li>
+                            <li><a href="#">협업상품</a></li>
+                            <li><a href="#">전/생선</a></li>
+                            <li><a href="#">대용량</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">할인특가</a></li>
+
+                    <li><a href="#">신상품</a></li>
+
+                    <li><a href="#">간편검색</a> </li>
+
+                    <li><a href="#">인기검색</a>
+                        <ul class="sub">
+                            <li><a href="#">#할인반찬</a></li>
+                            <li><a href="#">#부모님반찬</a></li>
+                            <li><a href="#">#제철반찬</a></li>
+                            <li><a href="#">#쿠킹박스</a></li>
+                            <li><a href="#">#어린이반찬</a></li>
+                            <li><a href="#">#소분야채</a></li>
+                            <li><a href="#">#반조리</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">이달의 맛집</a></li>
+
+                    <li><a href="#">이벤트/혜택</a></li>
+
+                    <li><a href="#">COMMUNIT</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <script>
+
+                $(function () {
+            
+                    $('.menu > li').mouseover(function () {
+            
+                        $(this).find('.sub').stop().slideDown();
+                    }).mouseout(function () {
+                        $('.sub').stop().slideUp();
+                    });
+            
+                });
+            
+            </script>
+
+        </div>
+    </header>
+
+    <div id="slider">
+        <ul class="slide">
+            <li><img src="img/banner1.jpg" alt=""></li>
+            <li><img src="img/banner2.jpg" alt=""></li>
+            <li><img src="img/banner3.jpg" alt=""></li>
+            <li><img src="img/banner4.jpg" alt=""></li>
+            <li><img src="img/banner5.jpg" alt=""></li>
+            <li><img src="img/banner6.jpg" alt=""></li>
+            <li><img src="img/banner7.jpg" alt=""></li>
+            <li><img src="img/banner8.jpg" alt=""></li>
+            <li><img src="img/banner9.jpg" alt=""></li>
+            <li><img src="img/banner10.jpg" alt=""></li>
+            <li><img src="img/banner11.jpg" alt=""></li>
+        </ul>
+
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+
+    </div>
+
+    <script>
+        $(function () {
+            function prev() {
+
+                $('.slide li:last').prependTo('.slide');
+                $('.slide').stop().animate({ marginLeft: 0 }, 800);
+
+            }
+
+            function next() {
+
+                $('.slide').stop().animate({ marginLeft: -1000 }, function () {
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({ marginLeft: 0 });
+
+                });
+            }
+
+            function slide() {
+
+                $('.slide').stop().animate({ marginLeft: -1000 }, function () {
+                    $('.slide li:first').appendTo('.slide');
+                    $('.slide').css({ marginLeft: 0 });
+
+                });
+
+            }
+
+            setInterval(slide, 5000);
+
+            $('.prev').click(function () {
+
+                prev();
+
+            });
+
+            $('.next').click(function () {
+
+                next();
+
+            });
+        });
+    
+    </script>
+
+
+    <section>
+        <form>
+            <div id="news1">
+                <a href="#"><img src="img/icon1.jpg" alt=""></a>
+
+                <div class="news1-txt">
+                    <h4>전체상품</h4>
+                    <P>전체상품보기</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon2.jpg" alt=""></a>
+
+
+                <div class="news1-txt">
+                    <h4>집밥세트</h4>
+                    <P>반찬세트 골라담기</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon3.jpg" alt=""></a>
+
+                <div class="news1-txt">
+                    <h4>조림류</h4>
+                    <P>연근,우엉,메추리,단호박 등</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon4.jpg" alt=""></a>
+                <div class="news1-txt">
+                    <h4>볶음류</h4>
+                    <P>제육,불고기,오징어,소세지 등</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon5.jpg" alt=""></a>
+                <div class="news1-txt">
+                    <h4>무침류</h4>
+                    <P>오이지,도라지,무,시래기 등</P>
+                </div>
+            </div>
+            <div id="news1">
+                <a href="#"><img src="img/icon6.jpg" alt=""></a>
+                <div class="news1-txt">
+                    <h4>절임류</h4>
+                    <P>무말랭이,깻잎,고추,양파 등</P>
+                </div>
+
+            </div>
+        </form>
+
+
+        </div>
+
+        </div>
+
+        <div id="brand">
+            <h2>어린이반찬</h2> <br>
+            <div class="brandbox">
+                <img src="img/14.jpg" alt="">
+                <span class="tag-not-spicy">#맵지않음</span> <br>
+                <strong>감자햄볶음</strong>
+                <P>우리 아이 최애 반찬</P>
+                <strong class="price-decount">
+                    "3,800"<span>원</span>
+                </strong>
+            </div>
+
+
+            <div class="brandbox">
+                <img src="img/7.jpg" alt="">
+                <strong>참치김치 주먹밥</strong>
+                <P>언제나 맛있는 김치와 참치의 조합</P>
+                <strong class="price-decount">
+                    "6,300"<span>원</span>
+                </strong>
+
+            </div>
+
+            <div class="brandbox">
+                <img src="img/10.jpg" alt="">
+                <span class="tag-not-spicy">#맵지않음</span> <br>
+                <strong>야채 계란찜</strong>
+                <P>야채가득 알록달록 계란찜 </P>
+                <strong class="price-decount">
+                    "5,500"<span>원</span>
+                </strong>
+            </div>
+
+            <div class="brandbox">
+
+                <img src="img/8.jpg" alt="">
+                <span class="tag-not-spicy">#맵지않음</span> <br>
+                <strong>아이들 된장국</strong>
+                <P>아이들도 먹기 좋은 맵지않은 된장국</P>
+                <strong class="price-decount">
+                    "9,800"<span>원</span>
+                </strong>
+
+            </div>
+
+        </div>
+
+        <div id="box1">
+            <img src="img/24.png" alt="">
+
+        </div>
+
+        <div id="box2">
+            <img src="img/25.png" alt="">
+
+        </div>
+
+        <div id="box3">
+            <img src="img/26.png" alt="">
+
+        </div>
+
+        <div id="brand">
+            <h2>주간추천반찬</h2><br>
+            <div class="brandbox">
+                <img src="img/13.jpg" alt="">
+                <strong>달래김무침</strong>
+                <P>가볍게 무친 봄의 맛</P>
+                <strong class="price-decount">
+                    "4,500"<span>원</span>
+                </strong>
+            </div>
+
+            <div class="brandbox">
+                <img src="img/28.jpg" alt="">
+                <strong>침나물 두부무침</strong>
+                <P>고소하고 향긋해요</P>
+                <strong class="price-decount">
+                    "4,300"<span>원</span>
+                </strong>
+            </div>
+
+            <div class="brandbox">
+                <img src="img/36.jpg" alt="">
+                <strong>새콤달콤 오이달래무침</strong>
+                <P>입맛을 돋우는 싱그러움</P>
+                <strong class="price-decount">
+                    "5,300"<span>원</span>
+                </strong>
+            </div>
+
+            <div class="brandbox">
+                <img src="img/9.jpg" alt="">
+                <strong>달래장</strong>
+                <P>알싸하고 향긋한 맛</P>
+                <strong class="price-decount">
+                    "5,800"<span>원</span>
+                </strong>
+            </div>
+
+            <div id="news2"> <img src="img/39.jpg" alt="">
+            </div>
+
+
+            <div id="brand1">
+                <h2>새로운 반찬</h2><br>
+                <div class="brandbox">
+                    <img src="img/17.jpg" alt="">
+                    <span class="tag-not-spicy">#신제품</span> <br>
+                    <strong>간장 오징어볶음_반조리</strong>
+                    <P>아이들를 위해 만든 감칠맛 반찬</P>
+                    <strong class="price-decount">
+                        "14,800"<span>원</span>
+                    </strong>
+                </div>
+
+                <div class="brandbox">
+                    <img src="img/16.jpg" alt="">
+                    <span class="tag-not-spicy">#신제품</span> <br>
+                    <strong>간장 오삼불고기_반조리</strong>
+                    <P>아이들를 위해 만든 감칠맛 반찬</P>
+                    <strong class="price-decount">
+                        "15,800"<span>원</span>
+                    </strong>
+                </div>
+
+                <div class="brandbox">
+                    <img src="img/19.jpg" alt="">
+                    <span class="tag-not-spicy">#맵지않음</span> <br>
+                    <strong>간장 고구마 닭갈비_반조리</strong>
+                    <P>아이들을 위한 메인요리</P>
+                    <strong class="price-decount">
+                        "14,800"<span>원</span>
+                    </strong>
+
+                </div>
+
+                <div class="brandbox">
+                    <img src="img/18.jpg" alt="">
+                    <strong>고구마 닭갈비_반조리</strong>
+                    <P>부드러운 매콤함에 손이 가는</P>
+                    <strong class="price-decount">
+                        "15,800"<span>원</span>
+                    </strong>
+                </div>
+
+                <div id="news3">
+                    <img src="img/29.jpg" alt="">
+
+                </div>
+
+
+                <div id="brand2">
+                    <h2>정기배송</h2>
+                    <div class="brandbox2">
+                        <img src="img/38.jpg" alt="">
+                        <span class="tag-not-spicy">#신제품</span> <br>
+                        <strong>방학식단(1~2인)</strong>
+
+                        <P>덮밥1.볶음밥1.주벅밥1.반찬4.간식 1개(1회)</P>
+                        <strong class="price-decount">
+                            "37,800"<span>원</span>
+                        </strong>
+                        <P>41,500원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/15.jpg" alt="">
+                        <strong>골고루반찬 식단(1~2인)</strong>
+
+                        <P>메인요리1,반찬5~6개(1회)</P>
+                        <strong class="price-decount">
+                            "36,900"<span>원</span>
+                        </strong>
+                        <P>41,500원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/5.jpg" alt="">
+                        <strong>실속식단(1~2인)</strong>
+
+                        <P>국1,메인요리1,반찬4~5개(1회)</P>
+                        <strong class="price-decount">
+                            "38,100"<span>원</span>
+                        </strong>
+                        <P>42,000원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/11.jpg" alt="">
+                        <strong>부모님식단(1~2인)</strong>
+
+                        <P>국1,메인요리,반찬4~5개(1회)</P>
+                        <strong class="price-decount">
+                            "42,500"<span>원</span>
+                        </strong>
+                        <P>47,000원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/12.jpg" alt="">
+                        <strong>어린이식단(2~3인)</strong>
+
+                        <P>국1,메인요리,반찬5~6개(1회)</P>
+                        <strong class="price-decount">
+                            "50,300"<span>원</span>
+                        </strong>
+                        <P>57,000원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/4.jpg" alt="">
+                        <strong>유아식단(2~3인)</strong>
+
+                        <P>국1,메인요리1,반찬5~6개(1회)</P>
+                        <strong class="price-decount">
+                            "50,300"<span>원</span>
+                        </strong>
+                        <P>57,000원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/6.jpg" alt="">
+                        <strong>가족식단(3~4인)</strong>
+
+                        <P>국2,메인요리2,반찬4~5개(1회)</P>
+                        <strong class="price-decount">
+                            "55,900"<span>원</span>
+                        </strong>
+                        <P>65,000원</P>
+                    </div>
+
+                    <div class="brandbox2">
+                        <img src="img/40.jpg" alt="">
+                        <strong>집반찬연구소 첫만남 세트(2~3인)</strong>
+
+                        <P>인기반찬</P>
+                        <strong class="price-decount">
+                            "52,900"<span>원</span>
+                        </strong>
+                    </div>
+
+
+
+                    <div class="brandbox2">
+                        <img src="img/41.jpg" alt="">
+                        <strong>집들이음식 세트(3~4인)</strong>
+
+                        <P>갑작스러운 손님을 맞아도 문제없어요!</P>
+                        <strong class="price-decount">
+                            "69,900"<span>원</span>
+                        </strong>
+                    </div>
+
+                    <div id="brand2">
+                        <h2>집반찬연구소 이야기</h2> <br>
+                        <div class="strory-section">
+                            <a href="#"><img src="img/3.jpg" alt=""></a>
+                            <h5><a href="#">2월 적립률2배 이벤트</a></h5>
+                            <p><a href="#">5일 간 진행하는 적립률2배 이벤트! <br>다음 달 소중한 식사를 꾸려보세요!</a></p>
+                        </div>
+
+                        <div class="strory-section">
+                            <a href="#"><img src="img/30.jpg" alt=""></a>
+                            <h5><a href="#">요리놀이학교 입학식</a></h5>
+                            <p><a href="#"> 집반찬연구소의 요리놀이학교에<br>입학하신 것을 축하드립니다!</a></p>
+                        </div>
+
+                        <div class="strory-section">
+                            <a href="#"><img src="img/37.jpg" alt=""></a>
+                            <h5><a href="#">맛있는 봄!</a></h5>
+                            <p><a href="#">봄나물 요리 한산!<br>맛있는 봄을 한껏 만끽해보세요.</a></p>
+                        </div>
+
+
+
+                        <div class="strory-section">
+                            <a href="#"><img src="img/21.jpg" alt=""></a>
+                            <h5><a href="#">1월적립률</a></h5>
+                            <p><a href="#">(종료)9일 간 진행하는 적립률2배 이벤트!<br> 다음 달 소중한 식사를 꾸려보세요!</a></p>
+                        </div>
+
+
+
+                        <div class="strory-section">
+                            <a href="#"><img src="img/33.jpg" alt=""></a>
+                            <h5><a href="#">정월대보름</a></h5>
+                            <p><a href="#">(종료)2023년, 집반찬연구소와 함께 올 한해도 풍요롭고 평안하시기를 같이 기원해</a></p>
+                        </div>
+
+
+                        <div class="strory-section">
+                            <a href="#"><img src="img/31.jpg" alt=""></a>
+                            <h5><a href="#">집반찬연구소</a></h5>
+                            <p><a href="#">(종료)추첨을 통해 응답자 100분께 '우리밀찹쌀약과' 1팩 무료쿠폰을 제공해드립니다!</a></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <hr>
+        <div id="box">
+            <ul>
+                <li>집반찬연구소 소개</li>
+                <li>|</li>
+                <li>이용약관</li>
+                <li>|</li>
+                <li>개인정보처리방침</li>
+            </ul>
+            <p>집반찬연구소 자세히 보기<br>
+                대표 : 박종철 / 주소 : 인천광역시 미추홀구 방축로206번길 36 집반찬연구소<br>
+                사업자번호 : 121-86-17743 / 통신판매업신고 : 제 2016-인천남구-0674 호 / 개인정보 정책 및 담당 : 정문채<br>
+                대표번호 : 1588-3754 / 팩스번호 : 032-424-3088 / 이메일 : zipbanchan@sannamchon.co.kr<br>
+                ⓒ SANNAMCHON CORP. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
